@@ -124,10 +124,28 @@ body {
     left: 292px;
   }
 }
-@media screen and (max-width: 320px) {
+@media screen and (max-width: 375px) {
   .section_tabs nav label {
     font-size: 13px;
   }
+  .content p {
+    text-align: left;
+  }
+  .section_tabs input#BLOG:checked ~ nav .active_slide {
+    left: 64px;
+  }
+  .section_tabs input#CODE:checked ~ nav .active_slide {
+    left: 127px;
+  }
+  .section_tabs input#HELP:checked ~ nav .active_slide {
+    left: 189px;
+  }
+  .section_tabs input#ABOUT:checked ~ nav .active_slide {
+    left: 252px;
+  }
+}
+
+@media screen and (max-width: 320px) {
   .content p {
     text-align: left;
   }
