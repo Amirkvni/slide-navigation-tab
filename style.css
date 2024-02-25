@@ -98,3 +98,49 @@ body {
 .content p {
   text-align: justify;
 }
+/* amir : */
+/* responsive :*/
+@media screen and (max-width: 425px) {
+  .section_tabs nav {
+    width: 100%;
+    height: 36px;
+  }
+  .section_tabs h3 {
+    font-size: 1.5rem;
+  }
+  .content h4 {
+    margin-top: 10px;
+  }
+  .section_tabs input#BLOG:checked ~ nav .active_slide {
+    left: 74px;
+  }
+  .section_tabs input#CODE:checked ~ nav .active_slide {
+    left: 146px;
+  }
+  .section_tabs input#HELP:checked ~ nav .active_slide {
+    left: 218px;
+  }
+  .section_tabs input#ABOUT:checked ~ nav .active_slide {
+    left: 292px;
+  }
+}
+@media screen and (max-width: 320px) {
+  .section_tabs nav label {
+    font-size: 13px;
+  }
+  .content p {
+    text-align: left;
+  }
+  .section_tabs input#BLOG:checked ~ nav .active_slide {
+    left: 52px;
+  }
+  .section_tabs input#CODE:checked ~ nav .active_slide {
+    left: 104px;
+  }
+  .section_tabs input#HELP:checked ~ nav .active_slide {
+    left: 156px;
+  }
+  .section_tabs input#ABOUT:checked ~ nav .active_slide {
+    left: 208px;
+  }
+}
